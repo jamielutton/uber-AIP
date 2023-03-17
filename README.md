@@ -36,7 +36,7 @@ I want to know my drop off point
 ## Instructions to clone to your computer
 
 1. Clone the repo, instructions can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-2. You will need to install the dependencies (known as Ruby gems), to do this use the command `bundle install --path vendor/bundle`
+2. You will need to install the dependencies (known as Ruby gems), to do this use the command `bundle install`
 3. To run the rspec tests run the command `bundle exec rspec` from your terminal
 4. There will be a few tests that are failing - debug to fix them
 
