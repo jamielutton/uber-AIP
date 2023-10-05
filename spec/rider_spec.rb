@@ -34,6 +34,7 @@ describe Rider do
       allow(journey).to receive(:set_pick_up_point)
       allow(journey).to receive(:set_drop_off_point)
       allow(journey).to receive(:fare).and_return 5
+      allow(journey).to receive(:pick_up_point).and_return "Buckley Building"
     end
 
     it 'sets the journey drop_off_point' do
