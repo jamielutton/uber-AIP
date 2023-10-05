@@ -1,10 +1,11 @@
 class Rider
-  attr_reader :journey, :name, :phone_number, :driver
+  attr_reader :journey, :name, :phone_number, :driver, :card_number
 
-  def initialize(journey, name, phone_number)
+  def initialize(journey, name, phone_number, card_number)
     @journey = journey
     @name = name
     @phone_number = phone_number
+    @card_number = card_number
   end
 
   def start_journey(driver, pick_up_point)

@@ -5,12 +5,13 @@ require 'journey'
 describe Rider do
   let(:journey) { double(:journey)}
   let(:driver) { double(:driver)}
-  let(:rider) { Rider.new(journey, "Sam Rider", "07777777777") }
+  let(:rider) { Rider.new(journey, "Sam Rider", "07777777777", "1234567890") }
 
   describe 'on initialize' do
-    it 'sets name and phone_number' do
+    it 'sets name, phone_number and card_number' do
       expect(rider.name).to eq "Sam Rider"
       expect(rider.phone_number).to eq "07777777777"
+      expect(rider.card_number).to eq "1234567890"
     end
   end
 
