@@ -8,7 +8,7 @@ class Journey
   end
 
   def set_pick_up_point(point)
-    @drop_off_point = point
+    @pick_up_point = point
   end
 
   def set_drop_off_point(point)
