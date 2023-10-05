@@ -20,4 +20,11 @@ describe Driver do
       expect(driver.total_to_pay).to eq 25
     end
   end
+
+  describe 'pay_cancellation_fee method' do
+    it 'pays driver cancellation fee' do
+      driver.pay_cancellation_fee
+      expect(driver.total_to_pay).to eq 15
+    end
+  end
 end

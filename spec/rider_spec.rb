@@ -54,4 +54,17 @@ describe Rider do
       expect { rider.end_journey("Buckley Building") }.to raise_exception "Pick up and drop off points are the same"
     end
   end
+
+  describe "cancel_journey method" do
+    before do 
+      allow(journey).to receive(:set_pick_up_point)
+      allow(driver).to receive(:pay_cancellation_fee)
+    end
+    
+    it "Pays driver cancellation fee" do
+      rider.start_journey(driver, "Buckley Building")
+      rider.cancel_journey
+      expect(driver).to have_received(:pay_cancellation_fee)
+    end
+  end
 end

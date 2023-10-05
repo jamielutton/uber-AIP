@@ -22,4 +22,8 @@ class Rider
     amount = @journey.fare
     @driver.pay(amount)
   end
+
+  def cancel_journey
+    @driver.pay_cancellation_fee
+  end
 end
