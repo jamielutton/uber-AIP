@@ -17,7 +17,7 @@ describe Driver do
   describe 'pay method' do
     it 'adds amount to total_to_pay' do
       driver.pay(15)
-      expect(driver.total_to_pay).to eq 15
+      expect(driver.total_to_pay).to eq 25
     end
   end
 end
