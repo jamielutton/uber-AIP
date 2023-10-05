@@ -5,7 +5,7 @@ class Driver
 
   def initialize(name, registration_number)
     @total_to_pay = 10
-    @name = "name"
+    @name = name
     @registration_number = registration_number
   end
 
